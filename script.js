@@ -56,9 +56,15 @@ console.log('studenti grezzo', studenti)
 const studentiSintesi = studenti.map((studente)=>{
   
   nomeC     = studente.nome +' '+ studente.cognome,
-  matr      = studente.matricola,
+  matr      = studente.matricola;
   voti      = studente.voti;
-  mediaVoti = ((voti.arte + voti.matematica + voti.lettere + voti.scienze) /4)
+  
+  // ogni volta trasforma oggetto voti in un array con tutti i voti e produce anche la somma degli stessi valori dentro a un contatore
+  votiArray = [];
+  votiConteggio = 0;
+  for (const key in voti) {votiArray.push(voti[key]); votiConteggio += voti[key]};
+  
+  mediaVoti = (votiConteggio / votiArray.length)
   
 // deve ritornare un array di {oggetti} con queste 'nuove' chiavi
   return {nomeC, matr, mediaVoti}
