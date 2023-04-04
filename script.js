@@ -12,12 +12,21 @@ const cose = [
   {nome: 'pennarelloB',colore:'nero'},
 ];
 
+// filter test
+const neri = cose.filter((coso)=>{
+  if (coso.colore === 'nero'){
+    return coso;
+  }
+});
+console.log('neri',neri)
+
 // map test
 const cosi = cose.map((coso)=>{
   return coso.nome;
 })
 console.log('cosi nome dei singoli oggetti distribuiti in nuovo array :',cosi)
 console.log('cose array orig :',cose)
+
 
 // foreach test
 // cose.forEach((element, index, array) => {
