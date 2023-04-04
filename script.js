@@ -1,40 +1,15 @@
 /*
   1.generare array di oggetti utenti
   2.generare altro array con solo utenti over65
-  ----------
+  ------------------------------------------------>
 */
-
 const utenti = [
-  {
-    nome : 'gianni',
-    cognome : 'rossi',
-    eta : 75,
-},
-  {
-    nome : 'maria',
-    cognome : 'verdi',
-    eta : 82,
-},
-  {
-    nome : 'mario',
-    cognome : 'bianchi',
-    eta : 45,
-},
-  {
-    nome : 'filippo',
-    cognome : 'marrone',
-    eta : 17,
-},
-  {
-    nome : 'filippo',
-    cognome : 'marrone',
-    eta : 15,
-},
-  {
-    nome : 'giovanni',
-    cognome : 'cip ciop',
-    eta : 19,
-}
+  { nome : 'gianni',   cognome : 'rossi',    eta : 75 },
+  { nome : 'maria',    cognome : 'verdi',    eta : 82 },
+  { nome : 'mario',    cognome : 'bianchi',  eta : 45 },
+  { nome : 'filippo',  cognome : 'marrone',  eta : 17 },
+  { nome : 'filippo',  cognome : 'marrone',  eta : 15 },
+  { nome : 'giovanni', cognome : 'cip ciop', eta : 19 }
 ]
 console.log('utenti',utenti)
 
