@@ -23,19 +23,38 @@ const utenti = [
   {
     nome : 'filippo',
     cognome : 'marrone',
-    eta : 25,
+    eta : 17,
+},
+  {
+    nome : 'filippo',
+    cognome : 'marrone',
+    eta : 15,
 },
   {
     nome : 'giovanni',
     cognome : 'cip ciop',
     eta : 19,
-},
-
+}
 ]
+console.log('utenti',utenti)
 
+// filtrare sopra 65 anni ------------------>
+const over65 = utenti.filter((utente)=>{
+  if (utente.eta >64){
+    return utente;
+  }
+})
+console.log('utenti-over65',over65)
 
-
-
+// sotto 18--------------------------------->
+const minorenni = utenti.filter((utente)=> {
+  if (utente.eta < 18){
+    return utente;
+  }
+})
+console.log('utenti-minorenni',minorenni)
+//                     <----------------------
+// -------------------------------------------
 
 
 
