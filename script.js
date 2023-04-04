@@ -55,10 +55,10 @@ console.log('studenti grezzo', studenti)
 // 1.estrapoliamo nuovo array 
 const studentiSintesi = studenti.map((studente)=>{
   
-  nomeC = studente.nome +' '+ studente.cognome,
-  matr   = studente.matricola,
-  voti        = studente.voti;
-  mediaVoti   = ((voti.arte + voti.matematica + voti.lettere + voti.scienze) /4)
+  nomeC     = studente.nome +' '+ studente.cognome,
+  matr      = studente.matricola,
+  voti      = studente.voti;
+  mediaVoti = ((voti.arte + voti.matematica + voti.lettere + voti.scienze) /4)
   
 // deve ritornare un array di {oggetti} con queste 'nuove' chiavi
   return {nomeC, matr, mediaVoti}
