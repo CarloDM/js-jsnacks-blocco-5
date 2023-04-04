@@ -28,6 +28,7 @@ const minorenni = utenti.filter((utente)=> {
   }
 })
 console.log('utenti-minorenni',minorenni)
+console.warn('<--------------------------------------------------------')
 //                     <----------------------
 // -------------------------------------------
 
@@ -49,8 +50,18 @@ const studenti = [
   { nome : 'elisa',     cognome : 'pong',       matricola: '11256',
     voti : {arte: 6,  matematica: 6,  lettere: 7, scienze: 6} },
 ];
+console.log('studenti grezzo', studenti)
 
-const studentiSintesi = studenti.
+// 1.estrapoliamo nuovo array 
+const studentiSintesi = studenti.map((studente)=>{
+  console.log(studente.nome, studente.cognome, studente.matricola);
+  console.log(studente.voti);
+  voti = studente.voti;
+  console.log(voti);
+  console.log((voti.arte + voti.matematica + voti.lettere + voti.scienze) /4);
+
+})
+console.log('studenti sintesi', studentiSintesi)
 
 
 
