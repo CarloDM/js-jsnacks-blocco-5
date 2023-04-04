@@ -1,4 +1,4 @@
-/*
+/*snk 1
   1.generare array di oggetti utenti
   2.generare altro array con solo utenti over65
   ------------------------------------------------>
@@ -30,6 +30,30 @@ const minorenni = utenti.filter((utente)=> {
 console.log('utenti-minorenni',minorenni)
 //                     <----------------------
 // -------------------------------------------
+
+/*snk2
+  1.CREARE STUDENTI - NOME COGNOME NUMERO DI MATR E UNA CHIAVE CHE CONTIENE UN ALTRO OGGETTO VOTI
+  2.nuovo elenco sintetico
+
+*/
+const studenti = [
+  { nome : 'mario',     cognome : 'bianchi',     matricola: '01234',
+    voti : {arte: 7,  matematica: 6,  lettere: 5,  scienze: 9} },
+
+  { nome : 'marcello',  cognome : 'bongiovanni', matricola: '54684',
+    voti : {arte: 5,  matematica: 9,  lettere: 6,  scienze: 10} },
+
+  { nome : 'maddalena', cognome : 'de giorgis', matricola: '66655',
+    voti : {arte: 10, matematica: 4,  lettere: 7, scienze: 5} },
+
+  { nome : 'elisa',     cognome : 'pong',       matricola: '11256',
+    voti : {arte: 6,  matematica: 6,  lettere: 7, scienze: 6} },
+];
+
+const studentiSintesi = studenti.
+
+
+
 
 
 
