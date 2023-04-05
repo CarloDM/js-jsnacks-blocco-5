@@ -46,29 +46,29 @@ console.log(biciLeggera);
 console.warn('----------------------jsnack6')
 // array oggetti squadre nome punt fatti falli subiti
 const squadre = [
-  {nome: 'real madrid',      punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'atletico bilbao',  punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'porto',            punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'milan',            punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'inter',            punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'juventus',         punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'ajax',             punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'liverpool',        punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'manchester',       punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
-  {nome: 'paris san germen', punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'real madrid',      punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'atletico bilbao',  punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'porto',            punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'milan',            punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'inter',            punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'juventus',         punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'ajax',             punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'liverpool',        punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'manchester',       punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
+  {nome: 'paris san germen', punti: randomNumber(0,100), falliSubiti: randomNumber(10,100)},
 ]
 console.log('squadre',squadre)
 
+let squadresintesi = squadre.map((squadra) => {
+  nome          = squadra.nome;
+  falliRicevuti = squadra.falliSubiti
+  return {nome, falliRicevuti}
+});
 
-
-
-
-
-
-
+console.log('squadre sintesi',squadresintesi)
 
 randomNumber();
-function randomNumber(max,min) {
+function randomNumber(min,max) {
   R = Math.floor(Math.random() * (max - min) + min)
   return R
 }
