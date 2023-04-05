@@ -25,7 +25,7 @@ let over70Over120Id = [studenti.filter((studente) => {if (studente.voto >= 70 &&
 console.log('lista over 70 e id over 120',over70Over120Id);
 
 // <--------------------------------------------------------------
-console.warn('----------------------js5')
+console.warn('----------------------jsnack5')
 // snk 5
 // lista bici da corsa nome e peso
 const bici = [
@@ -41,3 +41,34 @@ console.log(bici)
 let biciLeggera = {nome: 'bicipesante',  peso : 30};
 bici.forEach((bike)=>{if (bike.peso < biciLeggera.peso) {biciLeggera = bike;}});
 console.log(biciLeggera);
+
+// <--------------------------------------------------------------
+console.warn('----------------------jsnack6')
+// array oggetti squadre nome punt fatti falli subiti
+const squadre = [
+  {nome: 'real madrid',      punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'atletico bilbao',  punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'porto',            punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'milan',            punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'inter',            punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'juventus',         punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'ajax',             punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'liverpool',        punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'manchester',       punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+  {nome: 'paris san germen', punti: randomNumber(0,70), falliSubiti: randomNumber(10,100)},
+]
+console.log('squadre',squadre)
+
+
+
+
+
+
+
+
+
+randomNumber();
+function randomNumber(max,min) {
+  R = Math.floor(Math.random() * (max - min) + min)
+  return R
+}
