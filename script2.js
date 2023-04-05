@@ -14,13 +14,14 @@ const studenti = [
 // lista con nome in maiuscolo
 let nameList = [];
 studenti.forEach((studente) => nameList.push((studente.nome).toUpperCase()))
-console.log(nameList);
+console.log('nomi per targhette',nameList);
 
 // lista stud con voto superiore a 70
-let over70List =[studenti.filter((studente)=>{if (studente.voto > 69) return studente}) ]
-console.log(over70List);
+let over70List = [studenti.filter((studente)=>{if (studente.voto > 69) return studente})]
+console.log('lista voto sopra 70',over70List);
 
 // lista stud con voto superiore a 70 e id superiore a 120
-let over70Over120Id =[studenti.filter((studente)=>{if (studente.voto >= 70 && studente.id >= 120) return studente}) ]
-console.log(over70Over120Id);
+let over70Over120Id = [studenti.filter((studente)=>{if (studente.voto >= 70 && studente.id >= 120) return studente})]
+console.log('lista over 70 e id over 120',over70Over120Id);
 
+// <--------------------------------------------------------------
