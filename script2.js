@@ -25,14 +25,19 @@ let over70Over120Id = [studenti.filter((studente) => {if (studente.voto >= 70 &&
 console.log('lista over 70 e id over 120',over70Over120Id);
 
 // <--------------------------------------------------------------
-
+console.warn('----------------------js5')
 // snk 5
 // lista bici da corsa nome e peso
 const bici = [
-  {nome: 'cannondale', peso : 8.5},
-  {nome: 'bianchi', peso : 8},
+  {nome: 'cannondale',  peso : 8.5},
+  {nome: 'bianchi',     peso : 8},
   {nome: 'specialized', peso : 10},
-  {nome: 'stucchi', peso : 9.5},
-  {nome: 'locomotiv', peso : 9}
+  {nome: 'stucchi',     peso : 9.5},
+  {nome: 'locomotiv',   peso : 9}
 ]
+console.log(bici)
 
+// individuare bici meno pesante senza destructuri e templ literal
+let biciLeggera = {nome: 'bicipesante',  peso : 30};
+bici.forEach((bike)=>{if (bike.peso < biciLeggera.peso) {biciLeggera = bike;}});
+console.log(biciLeggera);
